@@ -1,9 +1,11 @@
-let firstString = prompt("Enter first string");
-let secondtString = prompt("Enter second string");
-let thirdString = prompt("Enter third string");
-alert(firstString.concat(secondtString).concat(thirdString));
-
-const num = 12345;
-let arrey = ("" + num).split("");
-let result = arrey.join(" ");
-alert(result);
+let firstNumber = prompt("Enter first number", 0);
+let secondNumber = prompt("Enter second number", 0);
+alert("User has entered " + firstNumber + " and " + secondNumber);
+let firstResult = +firstNumber + +secondNumber;
+let secontResult = firstNumber - secondNumber;
+let thirdResult = firstNumber * secondNumber;
+let fourthResult = firstNumber / secondNumber;
+alert(firstNumber + "+" + secondNumber + "=" + firstResult);
+alert(firstNumber + "-" + secondNumber + "=" + secontResult);
+alert(firstNumber + "*" + secondNumber + "=" + thirdResult);
+alert(firstNumber + "/" + secondNumber + "=" + fourthResult);
