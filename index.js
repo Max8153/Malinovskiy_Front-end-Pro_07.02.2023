@@ -1,25 +1,18 @@
 let userYearOfBirth = prompt("What is your year of birth?");
-if (userYearOfBirth === null) {
-    alert("It is sad, if u can not tell me your year of birth.");
-}  else if (userYearOfBirth.trim() === "") {
+if (userYearOfBirth === null || userYearOfBirth.trim() === "") {
     alert("It is sad, if u can not tell me your year of birth.");
 }
 let userQuestionCity = prompt("Where are you living now?");
-if (userQuestionCity === null) {
-    alert("It is sad, if u can not tell me where are you living.");
-}  else if (userQuestionCity.trim() === "") {
+if (userQuestionCity === null || userQuestionCity.trim() === "") {
     alert("It is sad, if u can not tell me where are you living.");
 }
 let userQuestionSport = prompt("What is your favorite sport?");
-if (userQuestionSport === null) {
-    alert("It is sad, if u can not tell about your favorite sport.");
-}  else if (userQuestionSport.trim() === "") {
+if (userQuestionSport === null || userQuestionSport.trim() === "") {
     alert("It is sad, if u can not tell about your favorite sport.");
 }
-let userAge = "You should be " + +(2022 - userYearOfBirth) + " years old.";
-if (userYearOfBirth === null) {
-    userAge = "";
-}  else if (userYearOfBirth.trim() === "") {
+// let userAge = "You should be " + +(2022 - userYearOfBirth) + " years old.";
+let userAge = `You should be ${2022 - userYearOfBirth} years old.`;
+if (userYearOfBirth === null || userYearOfBirth.trim() === "") {
     userAge = "";
 }
 if (userQuestionCity === "Kyiv") {
@@ -29,13 +22,11 @@ if (userQuestionCity === "Kyiv") {
 }  else if (userQuestionCity === "London") {
     userCity = "You are living in the capital of Great Britan.";
 }  
-   else if (userQuestionCity === null) {
-    userCity = "";
-}  else if (userQuestionCity.trim() === "") {
+   else if (userQuestionCity === null || userQuestionCity.trim() === "") {
     userCity = "";
 }
    else {
-    userCity = "You are living in " + userQuestionCity + " now.";
+    userCity = `You are living in ${userQuestionCity} now.`;
 }
 if (userQuestionSport === "football") {
     userSport = "Cool! Do you want to be like Lionel Messi?";
